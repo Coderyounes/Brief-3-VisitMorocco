@@ -1,0 +1,35 @@
+.section-1 {
+    position: relative;
+    height: 400px;
+    background-image: url('/Images/Background.png'); 
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 300px;
+    height: 40px;
+}
+
+.input-container input,
+.input-container button {
+    padding: 10px 20px;
+    border: beige;
+    border-radius: 15px;
+}
+
+.input-container input {
+    background-color: #f0f0f0; 
+    color: #4a3629;
+}
+
+.input-container button {
+    background-color: #4a3629; 
+    color: #fff;
+}
