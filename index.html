@@ -6,34 +6,81 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/global.css" >
     <link rel="stylesheet" href="./css/indexstyle.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- NavBar-->
     <header>
-        <div class="container bg-light flex justify-beetwen">
-
-            <div>
-                <img src="./images/logo.png" alt="Logo Image" width="80">
-            </div> <!-- Logo-->
-
-            <div class="flex align-center">
-                <input class="searchbar bg-cream" type="text" alt="search bar" placeholder="search">
-            </div>
-
-            <div>
-                <nav>
+        <div class="container bg-light">
+            <nav class="flex justify-beetwen">
+                <div>
+                    <img src="./images/logo.png" alt="Logo Image" width="80">
+                </div> <!-- Logo-->
+    
+                <div class="flex align-center">
+                    <input class="searchbar bg-cream" type="text" alt="search bar" placeholder="search">
+                </div>
+    
+                <div>
                     <ul>
                         <a href="#"><li>Home</li></a>
                         <a href="#"><li>Destination</li></a>
                         <a href="#"><li>Gastronomie</li></a>
                         <a href="#"><li>FAQ</li></a>
                     </ul>
-                </nav>
-            </div> <!-- Burger Menu -->
+                </div> <!-- Burger Menu -->
+            </nav>
         </div>
     </header>
     
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="bg-dark-brown">
+
+            <div>
+                <p class="footer-title text-center py-2">Visit Morroco</p>
+            </div>
+
+            <div class="flex justify-around footer-couloms">
+                <span>Support</span>
+                <span>Socials</span>
+            </div>
+
+            <div class="flex justify-around">
+                <div class="py-1">
+                    <div class="flex align-center">
+                        <img  src="./icons/contact.svg" alt="" width="30">
+                        <span class="mx-1 Outfit text-white footertext">ContactUs</span>
+                    </div>
+                    <div class="flex align-center py-1">
+                        <img src="./icons/phone.svg" alt="" width="30">
+                        <span class="mx-1 Outfit text-white footertext">Phone 1: +212611223344<br>Phone 2: +212161223344</span>
+                    </div>
+                    <div class="flex align-center">
+                        <img src="./icons/email.svg" alt="" width="30">
+                        <span class="mx-1 Outfit text-white footertext">support@visitmorroco.com</span>
+                    </div>
+                </div>
+
+                <div class="iconscontainer py-1">
+                    <div >
+                        <img  src="./icons/facebook.svg" alt="x" width="30">
+                    </div>
+
+                    <div class="py-1">
+                        <img src="./icons/instagram.svg" alt="x" width="30">
+                    </div>
+    
+                    <div >
+                        <img src="./icons/youtube.svg" alt="x" width="30">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </footer>
 </body>
 </html>

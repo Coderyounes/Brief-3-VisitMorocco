@@ -32,3 +32,32 @@
 li {
     list-style: none;
 }
+
+
+/* footer  */
+
+
+.footer-title {
+    font-family: Outfit;
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.footer-couloms {
+    font-family: Outfit;
+    color: white;
+    font-weight: 700;
+}
+
+.iconcolor {
+    color: #FCFAEE;
+}
+
+.iconscontainer {
+    width: 90px;
+}
+
+.footertext {
+    font-weight: 600;
+}
