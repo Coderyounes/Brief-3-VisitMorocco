@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="asmae"
+branch="branchName"
 
 git add .
 
