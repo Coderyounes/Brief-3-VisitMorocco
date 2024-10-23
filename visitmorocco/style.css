@@ -43,4 +43,40 @@ body{
         font-size: 3rem;
         text-align: center;
     }
-  
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .repas {
+        position: relative;
+    }
+    .repas:hover div {
+        display: block;
+    }
+    .repas div{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        background-color: gray;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+    
+
+
+    
+    
