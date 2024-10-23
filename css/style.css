@@ -91,6 +91,10 @@ body{
         opacity: 0.7;
         border-radius: 20px;
     }
+    .repas p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
    
       @keyframes slide-down {
         0% {
