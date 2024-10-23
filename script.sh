@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="walid"
+branch="branchName"
 
 git add .
 
