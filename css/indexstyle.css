@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+.bg-primary { background-color: #284659; }
+.bg-secondary { background-color: #7799A6; }
+.bg-light { background-color: #FCFAEE; }
+.bg-cream { background-color: #ECDFCC; }
+.bg-orange { background-color: #DA8359; }
+.bg-brown { background-color: #A66E4E; }
+.bg-dark-brown { background-color: #592D14; }
+.bg-dark-gray { background-color: #54473F; }
+
+.container {
+    padding: 5px;
+}
+
+.searchbar {
+    background-image: url(../icons/search.png);
+    background-repeat: no-repeat;
+    background-position-x:  95%;
+    background-position-y: 50%;
+    padding: 5px;
+    padding-left: 12px;
+    border: none;
+    border-radius: 20px;
+}
+
+.searchbar::placeholder {
+    color: white;
+    font-family: Outfits;
+}
+
+li {
+    list-style: none;
+}
