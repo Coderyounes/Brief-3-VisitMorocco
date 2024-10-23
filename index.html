@@ -12,24 +12,45 @@
     <!-- NavBar-->
     <header>
         <div class="container bg-light">
-            <nav class="flex justify-beetwen">
+            
+            <nav id="mobile-nav" class="flex justify-beetwen">
                 <div>
-                    <img src="./images/logo.png" alt="Logo Image" width="80">
-                </div> <!-- Logo-->
+                    <img class="logo" src="./images/logo.png" alt="Logo Image" width="80">
+                </div>
     
                 <div class="flex align-center">
                     <input class="searchbar bg-cream" type="text" alt="search bar" placeholder="search">
                 </div>
     
-                <div>
+                <div class="navelements">
                     <ul>
-                        <a href="#"><li>Home</li></a>
                         <a href="#"><li>Destination</li></a>
                         <a href="#"><li>Gastronomie</li></a>
                         <a href="#"><li>FAQ</li></a>
                     </ul>
-                </div> <!-- Burger Menu -->
+                </div>
             </nav>
+
+
+            <div id="desktop-nav" class="flex justify-beetwen mx-5">
+                <nav class="flex justify-beetwen">
+                    <div>
+                        <img class="logo" src="./images/logo.png" alt="Logo Image" width="80">
+                    </div>
+                    <div class="flex align-center mx-5">
+                        <ul class="flex Outfit navlist">
+                            <li class="mx-5"><a href="#">Destination</a></li>
+                            <li class="mx-5"><a href="#">Gastronomie</a></li>
+                            <li class="mx-5"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex align-center">
+                        <input class="searchbar bg-cream" type="text" alt="search bar" placeholder="search">
+                    </div> 
+                </nav>
+            </div>
+
+
         </div>
     </header>
     
@@ -47,7 +68,7 @@
             </div>
 
             <div class="flex justify-around">
-                <div class="py-1">
+                <div class="links py-1">
                     <div class="flex align-center">
                         <img  src="./icons/contact.svg" alt="" width="30">
                         <span class="mx-1 Outfit text-white footertext">ContactUs</span>
@@ -75,7 +96,6 @@
                         <img src="./icons/youtube.svg" alt="x" width="30">
                     </div>
                 </div>
-
 
             </div>
 
