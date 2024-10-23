@@ -6,12 +6,11 @@ body{
 }
 
  .hero {
-        margin-top: 140px;
-        
+        margin-top: 140px; 
     }
     
     .hero ul {
-        position: relative;
+    
         width: fit-content;
         margin: auto;
         margin-top: 30px;
@@ -29,7 +28,7 @@ body{
         position: relative;
         width: 69px;
         text-align: center;
-        color: #9e0f0f;
+        color: #5D5D5D;
         cursor: pointer;
         list-style: none;
     }
@@ -42,6 +41,18 @@ body{
     .titre {
         font-size: 3rem;
         text-align: center;
+    }
+    @media(max-width: 412px){
+        .hero ul{
+            position: sticky;
+            top: 0; /* Sticks to the top of the viewport */
+            background-color: #FCFAEE;
+            z-index: 10;
+            padding-bottom: 5%;
+         }
+        .titre{
+            font-size: 2rem;
+        }
     }
     img{
         width: 300px;
@@ -60,9 +71,13 @@ body{
 
     .repas {
         position: relative;
+        font-size: 17px;
+        transition: transform 0.3s ease;
+        overflow: hidden;
     }
     .repas:hover div {
         display: block;
+        animation: slide-down 0.5s forwards;
     }
     .repas div{
         display: none;
@@ -70,13 +85,23 @@ body{
         top: 0;
         left: 0;
         color: white;
-        background-color: gray;
+        background-color: rgb(139, 115, 115);
         width: 100%;
         height: 100%;
         opacity: 0.7;
+        border-radius: 20px;
     }
+   
+      @keyframes slide-down {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
     
 
 
-    
     
