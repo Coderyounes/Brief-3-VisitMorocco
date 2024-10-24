@@ -9,110 +9,70 @@
 .bg-dark-brown { background-color: #592D14; }
 .bg-dark-gray { background-color: #54473F; }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
 .container {
-    padding: 5px;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-left: 40px;
+    padding-right: 60px;
+} 
 
 .searchbar {
-    background-image: url(../icons/search.png);
-    background-repeat: no-repeat;
-    background-position-x:  95%;
-    background-position-y: 50%;
-    padding: 5px;
+    background-color: #ECDFCC;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    padding: 16px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    background-image: url("/icons/search.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+}
+
+.navlist {
+    width: 800px;
+    font-size: 30px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: black;
+    font-family: Outfit;
+    font-weight: 800;
 }
 
 .searchbar::placeholder {
     color: white;
-    font-family: Outfit;
-}
-
-li {
-    list-style: none;
-}
-
-
-/* footer  */
-
-
-.footer-title {
-    font-family: Outfit;
-    color: white;
-    font-weight: 900;
-    font-size: larger;
-}
-
-.footer-couloms {
-    font-family: Outfit;
-    color: white;
-    font-weight: 700;
-}
-
-.iconcolor {
-    color: #FCFAEE;
-}
-
-.iconscontainer {
-    width: 90px;
-}
-
-.footertext {
+    font-size: 16px;
     font-weight: 600;
+    font-family: Outfit;
 }
 
-#desktop-nav {
+.burgermenu {
     display: none;
 }
 
-#mobile-nav {
-    display: flex;
-}
 
-.links {
-    margin-left: 20px;
-}
-
-/* Hero Section  */
-
-.Hero-container {
-    background-image: url("/images/heromobile.png");
-    background-repeat: no-repeat;
-    height: 600px;
-    font-weight: 600;
-}
-
-@media screen and (min-width: 1280px) {
-
-    .container {
-        padding: 30px;
-    }
+@media only screen and (max-width: 950px) {
 
     .logo {
         width: 100px;
     }
 
-    .searchbar {
-        width: 300px;
-        height: 40px;
-        font-size: 16px;
-    }
-
     .navlist {
-        font-weight: 700;
-    }
-
-    #mobile-nav {
         display: none;
     }
 
-    #desktop-nav {
-        display: flex;
+    .searchbar {
+        width: 200px;
+        height: 20px;
     }
-    
+
+    .burgermenu {
+        display: block;
+    }
 }
