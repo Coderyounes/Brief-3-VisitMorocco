@@ -70,11 +70,10 @@ body {
 .image-card {
     display: flex;
     flex-direction: column; 
-    /* align-items: center;  */
     background-color: #ECDFCC;
     border-radius: 15px;
     padding: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
 }
 
 .image-card img {
@@ -86,12 +85,106 @@ body {
 .image-card button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #4a3629; /* Dark brown */
+    background-color: #4a3629; 
     border: none;
     border-radius: 15px;
     color: #fff;
     cursor: pointer;
 }
+
+
+body {
+    background-color: #ECDFCC;
+}
+
+/* Section 3 - Gallery */
+.section-3 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-3 h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Gallery navigation (radio buttons as selectors) */
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.gallery-nav label {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+.gallery-nav label:hover {
+    color: #284659;
+}
+input[type="radio"] {
+    display: none;
+}
+
+/* Highlight the active label with underline */
+input[type="radio"]:checked + label {
+    color: #000;
+}
+
+input[type="radio"]:checked + label::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    margin-top: 5px;
+}
+
+/* Gallery Images Grid */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Hide all images by default */
+.gallery-img {
+    display: none;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Show images when corresponding radio button is selected */
+#nord:checked ~ .gallery-images .nord-img,
+#est:checked ~ .gallery-images .est-img,
+#ouest:checked ~ .gallery-images .ouest-img,
+#sud:checked ~ .gallery-images .sud-img {
+    display: block;
+}
+
+/* Responsive for small screens */
+@media (max-width: 412px) {
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-nav {
+        flex-direction: column;
+    }
+}
+
 
 @media (max-width: 412px) {
     .section-1 {
@@ -106,7 +199,7 @@ body {
         width: 60%; 
         align-items: center; 
     }
-
+x
     .input-container input,
     .input-container button {
         width: 90%; 
