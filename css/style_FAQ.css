@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+body {
+  background-color: #592D14;
+  font-family: outfit;
+  color: #ECDFCC;
+}
+
+h2 {
+
+  font-size: 3.5vw;
+
+}
+
+.Title {
+
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.Container {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	       }
+
+.Questions {
+
+	width: 75%;
+}
+
+.subtitle {
+
+	display: flex;
+	justify-content: flex-start;
+	width: 75%;
+	font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 412px) {
+  .subtitle { 
+    font-size: 3vw;
+  }
+
+  h2 {
+  	font-size: 5vw;
+  }
+}
