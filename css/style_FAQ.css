@@ -1,13 +1,47 @@
-body {
-	
-	background-color:#592D14;
-	font-family: outfit;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
 
+body {
+  background-color: #592D14;
+  font-family: outfit;
+  color: #ECDFCC;
 }
 
 h2 {
 
-	font-size: 30 vw;
+  font-size: 3.5vw;
 
+}
 
+.Title {
+
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.Container {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	       }
+
+.Questions {
+
+	width: 75%;
+}
+
+.Subtitle {
+
+	display: flex;
+	justify-content: flex-start;
+	width: 75%;
+}
+@media (max-width: 500px) {
+  .subtitle > * {
+    font-size: 100px; 
+  }
 }
