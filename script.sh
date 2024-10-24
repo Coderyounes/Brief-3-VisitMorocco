@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="branchName"
+branch="yasser"
 
 git add .
 
@@ -8,4 +8,4 @@ read -p "Enter your Commit message: " message
 
 git commit -m "$message"
 
-git push origin "$branch"
+git push origin "$branch
