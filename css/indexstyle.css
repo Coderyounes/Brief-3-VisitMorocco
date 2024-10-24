@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
 body{
     margin:0;
     border: 0;
 }
 .hero{
-    margin: 50px;
+    
     height: 800px;
     background-image: url("/Images/herosec.png");
     background-repeat:no-repeat;
@@ -21,6 +23,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: Outfit;
+    font-weight: 600;
 }
 .hero__button{
     height: 50px;
@@ -47,4 +51,24 @@ button {
 }
 button:hover {
     transform: scale(1.1);
+}
+@media all and (max-width: 412px){
+    .hero{
+        
+        height: 800px;
+        background-image: url("/Images/herophone.png");
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero_first_text{
+        width: 80%;
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
+    }
+    
 }
