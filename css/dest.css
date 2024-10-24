@@ -6,6 +6,7 @@
   font-style: normal;
 }
 body {
+    font-family: 'Arial', sans-serif;
     background-color: #ECDFCC;
 }
 .section-1 {
@@ -71,15 +72,14 @@ body {
     display: flex;
     flex-direction: column; 
     background-color: #ECDFCC;
-    border-radius: 15px;
     padding: 10px;
+
 
 }
 
 .image-card img {
     width: 250px;
     height: 390px;
-    border-radius: 10px;
 }
 
 .image-card button {
@@ -108,7 +108,7 @@ body {
     color: #333;
 }
 
-/* Gallery navigation (radio buttons as selectors) */
+/* Gallery navigation*/
 .gallery-nav {
     display: flex;
     justify-content: center;
@@ -125,73 +125,38 @@ body {
 }
 
 .gallery-nav label:hover {
-    color: #284659;
+    color: #8a8572;
 }
 input[type="radio"] {
     display: none;
 }
-
-/* Highlight the active label with underline */
-input[type="radio"]:checked + label {
-    color: #000;
-}
-
-input[type="radio"]:checked + label::after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #000;
-    margin-top: 5px;
-}
-
 /* Gallery Images Grid */
 .gallery-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-gap: 12px; 
+    row-gap: 60px;    
     justify-items: center;
+     max-width: 800px;
+    margin: 0 auto;
 }
-
 /* Hide all images by default */
 .gallery-img {
     display: none;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+  width: 219px;
+  height: 189px;
+  object-fit: cover; 
 }
 
-/* Show images when corresponding radio button is selected */
 #nord:checked ~ .gallery-images .nord-img,
 #est:checked ~ .gallery-images .est-img,
 #ouest:checked ~ .gallery-images .ouest-img,
 #sud:checked ~ .gallery-images .sud-img {
     display: block;
 }
-
-/* Responsive for small screens */
+/* Responsive design for mobile at 412px width */
 @media (max-width: 412px) {
-    .gallery-images {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-img {
-        width: 100%;
-        height: auto;
-    }
-
-    .gallery-nav {
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width: 412px) {
-    .section-1 {
-        height: auto;
-        padding: 20px 0;
-        background-image: url('/Images/backgroun2.png'); 
-    }
+   
 
     .input-container {
         margin-top: 30px;
@@ -199,7 +164,6 @@ input[type="radio"]:checked + label::after {
         width: 60%; 
         align-items: center; 
     }
-x
     .input-container input,
     .input-container button {
         width: 90%; 
@@ -216,5 +180,22 @@ x
 
     .image-card button {
         width: 90%;  
+}
+.gallery-images {
+    grid-template-columns: 1fr;
+}
+
+.gallery-img {
+    width: 95%;
+    height: auto;
+}
+
+.gallery-nav {
+    flex-direction: flex;
+}
+.section-1 {
+    height: auto;
+    padding: 20px 0;
+    background-image: url('/Images/backgroun2.png'); 
 }
 }
