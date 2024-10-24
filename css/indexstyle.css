@@ -78,6 +78,14 @@ li {
     margin-left: 20px;
 }
 
+/* Hero Section  */
+
+.Hero-container {
+    background-image: url("/images/heromobile.png");
+    background-repeat: no-repeat;
+    height: 600px;
+    font-weight: 600;
+}
 
 @media screen and (min-width: 1280px) {
 
