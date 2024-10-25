@@ -90,8 +90,16 @@ textarea {
 	height: 40px;
 	font-size: 20px;
 	color: #592D14;
+	margin-bottom: 20px;
 
 
+}
+
+dt {
+	font-size: 1.17em;
+  margin-bottom: 0.33em;
+  font-weight: bold;
+  display: block;
 }
 
 
