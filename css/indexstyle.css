@@ -1,9 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
 
-body{
-    margin:0;
-    border: 0;
+
+.bg-primary { background-color: #284659; }
+.bg-secondary { background-color: #7799A6; }
+.bg-light { background-color: #FCFAEE; }
+.bg-cream { background-color: #ECDFCC; }
+.bg-orange { background-color: #DA8359; }
+.bg-brown { background-color: #A66E4E; }
+.bg-dark-brown { background-color: #592D14; }
+.bg-dark-gray { background-color: #54473F; }
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-left: 40px;
+    padding-right: 60px;
+} 
+
+.searchbar {
+    background-color: #ECDFCC;
+    border: none;
+    border-radius: 30px;
+    padding: 16px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    background-image: url("/icons/search.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
 }
+
+.navlist {
+    width: 800px;
+    font-size: 30px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: black;
+    font-family: Outfit;
+    font-weight: 800;
+}
+
+.searchbar::placeholder {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Outfit;
+}
+
+.burgermenu {
+    display: none;
+}
+
+.footersection {
+    padding: 20px 100px;
+}
+
+.copyright {
+    border-top: 1px solid white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#burgerMenu {
+    display: none;
+}
+
 .hero{
     
     height: 800px;
@@ -64,8 +131,41 @@ button:hover {
 .history_text{
     width: 600px;
 }
-@media all and (max-width: 412px){
-    .hero{
+
+
+@media only screen and (max-width: 950px) {
+
+    .container {
+        padding-left: 10px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .searchbar {
+        width: 200px;
+        height: 20px;
+    }
+
+    
+    .footer_logo {
+        display: none;
+    }
+
+    .footersection {
+        padding: 20px 80px;
+    }
+
+    #burgerMenu {
+        display: block;
+    }
+  
+     .hero{
         height: 800px;
         background-image: url("/Images/herophone.png");
         background-size: contain;
@@ -81,5 +181,44 @@ button:hover {
         text-align: center;
         line-height: 20px;
     }
-    
-}
+
+
+    .menu {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+    }
+
+    .burger {
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    .nav-links {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        right: 0;
+        top: 40px;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        background-color: #555;
+    }
+
+    input[type="checkbox"]:checked ~ .nav-links {
+        display: block;
+    }
