@@ -164,7 +164,7 @@ input[type="radio"] {
         width: 60%; 
         align-items: center; 
     }
-    .input-container input,
+    .input-container input, 
     .input-container button {
         width: 90%; 
     }

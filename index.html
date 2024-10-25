@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/indexstyle.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- NavBar-->
     <header>
@@ -28,7 +30,7 @@
 
             <!-- menu Burger -->
 
-            <div id="burgerMenu" class="menu">
+            <div id="burgerMenu" class="menu-mobile">
                 <input type="checkbox" id="menu-toggle" style="display: none;">
                 <div class="burger" onclick="document.getElementById('menu-toggle').click();">
                     <div></div>
@@ -50,23 +52,110 @@
         <div class="hero">
             <div class="hero__text">
                 <div class="hero_first_text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, esse? Aspernatur libero facere omnis quia, amet consequatur dolores? Commodi reprehenderit deserunt tempora vel? Natus cum vitae suscipit, possimus laboriosam hic?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, esse? Aspernatur libero facere
+                        omnis quia, amet consequatur dolores? Commodi reprehenderit deserunt tempora vel? Natus cum
+                        vitae suscipit, possimus laboriosam hic?</p>
                 </div>
                 <div class="hero__button">
                     <button class="Discover-button">Discover</button>
                 </div>
-                    
-                
+
+
             </div>
-           
-        </div>   
+
+        </div>
     </section>
- 
+    <!-- history section-->
     <section>
-        <div class="history">
-            <div class="history_text">
-            <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
+        <div class="history_backround">
+            <div class="history_title">
+                HISTORY
             </div>
+    
+                <div class="history_content">
+                <div class="history_text">
+                    <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de
+                        distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem
+                        Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une
+                        distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français
+                        standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du
+                        Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers
+                        de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont
+                        apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter
+                        de petits clins d'oeil, voire des phrases embarassantes).</p>
+                </div>
+                <img src="/images/marrakech.jpg" alt="merakch" class="history_img">
+            </div>
+        </div>
+    </section>
+  
+    <!--VIDEO LIBRARY-->
+    <section class="lib">
+        <h2>VIDEO LIBRARY</h2>
+        <input type="radio" id="nord" name="region" checked>
+        <input type="radio" id="EST" name="region">
+        <input type="radio" id="ouest" name="region">
+        <input type="radio" id="sud" name="region">
+
+        <!-- Navigation Labels -->
+        <div class="lib-nav">
+            <label for="nord">NORD</label>
+            <label for="EST">EST</label>
+            <label for="ouest">OUEST</label>
+            <label for="sud">SUD</label>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="images">
+
+            <img src="/images/chamal3.jpg" alt="morrocan cities" class="lib-img nord-img">
+            <img src="/images/chamal2.jpg" alt="morrocan cities" class="lib-img nord-img">
+            <img src="/images/chamal1.jpg" alt="morrocan cities" class="lib-img nord-img">
+
+
+            <img src="/images/FES.jpg" alt="morrocan cities" class="lib-img EST-img">
+            <img src="/images/bab manssour.jpg" alt="morrocan cities" class="lib-img EST-img">
+            <img src="/images/Oujda.jpg" alt="morrocan cities" class="lib-img EST-img">
+
+
+
+            <img src="/images/Kénitra.jpg" alt="morrocan cities" class="lib-img ouest-img">
+            <img src="/images/El Jadida.jpg" alt="morrocan cities" class="lib-img ouest-img">
+            <img src="/images/marrakech.jpg" alt="morrocan cities" class="lib-img ouest-img">
+
+
+
+            <img src="/images/desert2.jpg" alt="morrocan cities" class="lib-img sud-img">
+            <img src="/images/sidiifni.jpg" alt="morrocan cities" class="lib-img sud-img">
+            <img src="/images/deseer.jpg" alt="morrocan cities" class="lib-img sud-img">
+        </div>
+    </section>
+
+    <!-- Call to Action section-->
+    <section class="form-section">
+        <div class="call_to_action">
+            <div class="text-container">
+                <p>
+                    Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre
+                    elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde
+                    à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il
+                    n'y
+                    a rien d'embarrassant caché dans le texte.
+                </p>
+
+                <!-- Email Form -->
+                <form class="email-form">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="/Images/history.png" alt="" id="img_call" width="400">
+            </div>
+        </div>
+    </section>
             <div>
                 <img src="/images/history.png" alt="">
             </div>
