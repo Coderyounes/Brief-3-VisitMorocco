@@ -77,6 +77,8 @@ input::placeholder, textarea::placeholder {
 textarea {
 
 	height: 20vh;
+	resize: none;
+	padding-top: 1vh;
 }
 
 .form-button{
@@ -98,8 +100,18 @@ textarea {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	gap: 5vw;
 
+}
 
+.map {
+
+	align-self: center;
+	height: 50vh;
+}
+
+p {
+	height: 6vh;
 }
 
 @media only screen and (max-width: 412px) {
