@@ -6,6 +6,7 @@
   font-style: normal;
 }
 body {
+    font-family: 'Arial', sans-serif;
     background-color: #ECDFCC;
 }
 .section-1 {
@@ -70,35 +71,92 @@ body {
 .image-card {
     display: flex;
     flex-direction: column; 
-    /* align-items: center;  */
     background-color: #ECDFCC;
-    border-radius: 15px;
     padding: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+
 }
 
 .image-card img {
     width: 250px;
     height: 390px;
-    border-radius: 10px;
 }
 
 .image-card button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #4a3629; /* Dark brown */
+    background-color: #4a3629; 
     border: none;
     border-radius: 15px;
     color: #fff;
     cursor: pointer;
 }
 
+
+body {
+    background-color: #ECDFCC;
+}
+
+/* Section 3 - Gallery */
+.section-3 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-3 h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Gallery navigation*/
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.gallery-nav label {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+.gallery-nav label:hover {
+    color: #8a8572;
+}
+input[type="radio"] {
+    display: none;
+}
+/* Gallery Images Grid */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 12px; 
+    row-gap: 60px;    
+    justify-items: center;
+     max-width: 800px;
+    margin: 0 auto;
+}
+/* Hide all images by default */
+.gallery-img {
+    display: none;
+  width: 219px;
+  height: 189px;
+  object-fit: cover; 
+}
+
+#nord:checked ~ .gallery-images .nord-img,
+#est:checked ~ .gallery-images .est-img,
+#ouest:checked ~ .gallery-images .ouest-img,
+#sud:checked ~ .gallery-images .sud-img {
+    display: block;
+}
+/* Responsive design for mobile at 412px width */
 @media (max-width: 412px) {
-    .section-1 {
-        height: auto;
-        padding: 20px 0;
-        background-image: url('/Images/backgroun2.png'); 
-    }
+   
 
     .input-container {
         margin-top: 30px;
@@ -106,8 +164,7 @@ body {
         width: 60%; 
         align-items: center; 
     }
-
-    .input-container input,
+    .input-container input, 
     .input-container button {
         width: 90%; 
     }
@@ -123,5 +180,22 @@ body {
 
     .image-card button {
         width: 90%;  
+}
+.gallery-images {
+    grid-template-columns: 1fr;
+}
+
+.gallery-img {
+    width: 95%;
+    height: auto;
+}
+
+.gallery-nav {
+    flex-direction: flex;
+}
+.section-1 {
+    height: auto;
+    padding: 20px 0;
+    background-image: url('/Images/backgroun2.png'); 
 }
 }
