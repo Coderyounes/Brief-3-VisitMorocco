@@ -222,3 +222,4 @@ button:hover {
     input[type="checkbox"]:checked ~ .nav-links {
         display: block;
     }
+}
