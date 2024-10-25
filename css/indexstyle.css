@@ -509,4 +509,3 @@ input[type="radio"]:checked + label::after {
     input[type="checkbox"]:checked ~ .nav-links {
         display: block;
     }
-}
