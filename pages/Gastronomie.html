@@ -4,13 +4,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gastronomie</title>
+        <link rel="stylesheet" href="../css/global.css" >
+        <link rel="stylesheet" href="../css/indexstyle.css" >
         <link rel="stylesheet" href="../css/gastronomie.css">
         <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css" > 
 
     </head>
     <body>
        
-        <header></header>
+        <header>
+            <div class="container bg-light">
+                <div>
+                    <a href="#">
+                        <img class="logo" src="../images/EclipseLogo.png">
+                    </a>
+                </div>
+                <div class="flex justify-around navlist">
+                    <a href="#">Destination</a>
+                    <a href="#">Gastronomie</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div>
+                    <input class="searchbar"  type="text" placeholder="Search">
+                </div>
+    
+                <!-- menu Burger -->
+    
+                <div id="burgerMenu" class="menu-mobile">
+                    <input type="checkbox" id="menu-toggle" style="display: none;">
+                    <div class="burger" onclick="document.getElementById('menu-toggle').click();">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="nav-links">
+                        <a href="#">Home</a>
+                        <a href="#">Destination</a>
+                        <a href="#">Gastronomie</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            
+            </div>
+        </header>
 
         <div class="menu">
         <section class="gastronomie">
@@ -44,42 +80,96 @@
                 <!-- boisson Images -->
                
                 <img src="../Images/tea.jpg" alt="Boison 1" class="gastronomie-img boisson-img">
-                <img src="../images/poms.jpg" alt="Boison 2" class="gastronomie-img boisson-img">
-                <img src="../images/zarzar.jpg" alt="Boison 3" class="gastronomie-img boisson-img">
-                <img src="../images/hawai.jpg" alt="Boison 4" class="gastronomie-img boisson-img">
-                <img src="../images/date.jpg" alt="Boison 5" class="gastronomie-img boisson-img">
-                <img src="../images/jamila.jpg" alt="Boison 6" class="gastronomie-img boisson-img">
-                <img src="../images/raib.jpg" alt="Boison 6" class="gastronomie-img boisson-img"> 
+                <img src="../Images/poms.jpg" alt="Boison 2" class="gastronomie-img boisson-img">
+                <img src="../Images/zarzar.jpg" alt="Boison 3" class="gastronomie-img boisson-img">
+                <img src="../Images/hawai.jpg" alt="Boison 4" class="gastronomie-img boisson-img">
+                <img src="../Images/date.jpg" alt="Boison 5" class="gastronomie-img boisson-img">
+                <img src="../Images/jamila.jpg" alt="Boison 6" class="gastronomie-img boisson-img">
+                <img src="../Images/raib.jpg" alt="Boison 6" class="gastronomie-img boisson-img"> 
             
                 <!--sweet images-->
           
-                <img src="../images/karb.jpg" alt="Switess 1" class="gastronomie-img sweet-img">
-                <img src="../images/xbakia.jpg" alt="Switess 2" class="gastronomie-img sweet-img">
-                <img src="../images/xokola.jpg" alt="Switess 3" class="gastronomie-img sweet-img">
-                <img src="../images/kok.jpg" alt="Switess 4" class="gastronomie-img sweet-img">
-                <img src="../images/kark.jpg" alt="Switess 5" class="gastronomie-img sweet-img">
-                <img src="../images/griba.jpg" alt="Switess 6" class="gastronomie-img sweet-img">
-                <img src="../images/fkas.jpg" alt="Switess 6" class="gastronomie-img sweet-img">
-                <img src="../images/briwat.jpg" alt="Switess 6" class="gastronomie-img sweet-img">
-                <img src="../images/slo.jpg" alt="Switess 6" class="gastronomie-img sweet-img">  
+                <img src="../Images/karb.jpg" alt="Switess 1" class="gastronomie-img sweet-img">
+                <img src="../Images/xbakia.jpg" alt="Switess 2" class="gastronomie-img sweet-img">
+                <img src="../Images/xokola.jpg" alt="Switess 3" class="gastronomie-img sweet-img">
+                <img src="../Images/kok.jpg" alt="Switess 4" class="gastronomie-img sweet-img">
+                <img src="../Images/kark.jpg" alt="Switess 5" class="gastronomie-img sweet-img">
+                <img src="../Images/griba.jpg" alt="Switess 6" class="gastronomie-img sweet-img">
+                <img src="../Images/fkas.jpg" alt="Switess 6" class="gastronomie-img sweet-img">
+                <img src="../Images/briwat.jpg" alt="Switess 6" class="gastronomie-img sweet-img">
+                <img src="../Images/slo.jpg" alt="Switess 6" class="gastronomie-img sweet-img">  
                 
     
                 <!-- autres Images-->
                 
                 
-                <img src="../images/lhrxa.jpg" alt="autre 1" class="gastronomie-img autre-img">
+                <img src="../Images/lhrxa.jpg" alt="autre 1" class="gastronomie-img autre-img">
                 <img src="../images/msman.jpg" alt="autre 2" class="gastronomie-img autre-img">
-                <img src="../images/gors.jpg" alt="autre 3" class="gastronomie-img autre-img">
-                <img src="../images/batbot.jpg" alt="autre 4" class="gastronomie-img autre-img">
+                <img src="../Images/gors.jpg" alt="autre 3" class="gastronomie-img autre-img">
+                <img src="../Images/batbot.jpg" alt="autre 4" class="gastronomie-img autre-img">
                 <img src="../images/xfnj.jpg" alt="autre 5" class="gastronomie-img autre-img">
-                <img src="../images/mlwi.jpg" alt="autre 6" class="gastronomie-img autre-img">
-                <img src="../images/bhrir.jpg" alt="autre 6" class="gastronomie-img autre-img">
+                <img src="../Images/mlwi.jpg" alt="autre 6" class="gastronomie-img autre-img">
+                <img src="../Images/bhrir.jpg" alt="autre 6" class="gastronomie-img autre-img">
                 <img src="../images/koda.jpg" alt="autre 6" class="gastronomie-img autre-img">
-                <img src="../images/mkanfar.jpg" alt="autre 6" class="gastronomie-img autre-img">
+                <img src="../Images/mkanfar.jpg" alt="autre 6" class="gastronomie-img autre-img">
                 
             </div>
             </div> 
         </section>
+
+        <footer>
+
+            <div class="bg-dark-gray footersection">
+                <div class="flex justify-around" style="gap: 100px;">
+                    <div class="flex justify-center align-center footer_logo">
+                        <img src="../images/EclipseLogo.png" alt="Footer Logo" width="300">
+                    </div>
+    
+                    <div style="width: 50%; flex-wrap: wrap;" class="flex justify-around align-center">
+                        <div style="font-family: Outfit; color: white;">
+    
+                            <div>
+                                <h2>Support</h2>
+                                <div class="flex align-center">
+                                    <img src="/icons/contact.svg" width="40">
+                                    <span class="mx-1 ">Contact Us</span>
+                                </div>
+                                <div class="flex align-center py-1">
+                                    <img src="/icons/phone.svg" width="40">
+                                    <span class="mx-1">+212611223344</span>
+                                </div>
+                                <div class="flex align-center">
+                                    <img src="/icons/email.svg" width="40">
+                                    <span class="mx-1">support@visitmorroco.com</span>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div>
+                            <div style="font-family: Outfit; color: white;">
+                                <h2>Links</h2>
+                                <div>
+                                    <img src="/icons/facebook.svg" width="40">
+                                </div>
+                                <div class="py-1">
+                                    <img src="/icons/instagram.svg" width="40">
+                                </div>
+                                <div>
+                                    <img src="/icons/youtube.svg" width="40">
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="copyright text-center text-white bg-dark-gray">
+                <pre>CodeShogun@Copyright 2021</pre>
+            </div>
+        </footer>
 
     </body>
 </html>
