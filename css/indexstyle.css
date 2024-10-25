@@ -77,7 +77,7 @@ body {
 .hero{
     
     height: 800px;
-    background-image: url("./Images/herosec.png");
+    background-image: url("../Images/herosec.png");
     background-repeat:no-repeat;
     background-size: contain;
     background-position: center;
