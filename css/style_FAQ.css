@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
 
 body {
-  background-color: #592D14;
-  font-family: outfit;
-  color: #ECDFCC;
+	background-color: #592D14;
+	font-family: outfit;
+	color: #ECDFCC;
 }
 
 h2 {
 
-  font-size: 3.5vw;
+	font-size: 3.5vw;
 
 }
 
@@ -16,18 +16,18 @@ h2 {
 
 	display: flex;
 	flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 15%;
+	justify-content: center;
+	align-items: center;
+	height: 15%;
 }
 
-.Container {
+.Container2 {
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	       }
+}
 
 .Questions {
 
@@ -42,12 +42,114 @@ h2 {
 	font-size: 1.5vw;
 }
 
-@media only screen and (max-width: 412px) {
-  .subtitle { 
-    font-size: 3vw;
-  }
+.heading_container {
 
-  h2 {
-  	font-size: 5vw;
-  }
+	font-size: 5vw;
+	font-weight: bold;
+
 }
+
+.contact_form {
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+input, textarea {
+
+	background-color: #ECDFCC;
+	border: none;
+	border-radius: 30px;
+	width: 300px;
+	height: 40px;
+	font-size: 20px;
+	outline: none;
+	padding-left: 20px;
+
+}
+
+input::placeholder, textarea::placeholder {
+	color: #592D14;
+}
+
+textarea {
+
+	height: 20vh;
+	resize: none;
+	padding-top: 1vh;
+}
+
+.form-button{
+
+	background-color: #ECDFCC;
+	border: none;
+	border-radius: 30px;
+	width: 75px;
+	height: 40px;
+	font-size: 20px;
+	color: #592D14;
+
+
+}
+
+
+.second_section {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 5vw;
+
+}
+
+.map {
+
+	align-self: center;
+	height: 50vh;
+}
+
+p {
+	height: 6vh;
+}
+
+@media only screen and (max-width: 412px) {
+	.subtitle { 
+		font-size: 3vw;
+	}
+
+	h2 {
+		font-size: 5vw;
+	}
+	.second_section {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5vw;
+		align-items: center;
+
+	}
+	.map {
+		align-self: center;
+		width: 80vw;
+	}
+
+	iframe {
+		width: 80vw  ;
+		height: 40vh;
+	}
+
+	.contact_us{
+
+		display: flex;
+		align-items: center;
+
+	}
+	.menu2 {
+		position: absolute;
+		right: 20px;
+
+
+	}
