@@ -26,14 +26,7 @@ body{
     font-family: Outfit;
     font-weight: 600;
 }
-.hero__button{
-    height: 50px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 .hero_first_text{
     width: 400px;
     font-size: 20px;
@@ -52,7 +45,7 @@ button {
 button:hover {
     transform: scale(1.1);
 }
-.history{
+.history_content{
     padding: 30px;
     display: flex;
     align-items: center;
@@ -63,6 +56,17 @@ button:hover {
 }
 .history_text{
     width: 600px;
+    text-align: center;
+}
+.history_title{
+    display: flex;
+    justify-content: center;
+}
+.history_backround{
+    background-color: #ECDFCC;
+    border-radius: 60px;
+    margin-bottom: 10px;
+
 }
 @media all and (max-width: 412px){
     .hero{
@@ -81,5 +85,153 @@ button:hover {
         text-align: center;
         line-height: 20px;
     }
-    
+    .history_text{
+        width: 90%;
+    }
+    .history_img{
+        width: 100%;
+        height: auto;
+        
+    }
 }
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.images img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* lib -*/
+.lib {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.lib h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+.lib-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.lib-nav label {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+.lib-nav label:hover {
+    color: #284659;
+}
+input[type="radio"] {
+    display: none;
+}
+
+
+input[type="radio"]:checked + label {
+    color: #000;
+}
+
+input[type="radio"]:checked + label::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    margin-top: 5px;
+}
+
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: center;
+}
+
+
+.lib-img {
+    display: none;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+#plat:checked ~ .images .nord-img,
+#boisson:checked ~ .images .boisson-img,
+#sweet:checked ~ .images .sweet-img,
+#autre:checked ~ .images .autre-img {
+    display: block;
+}
+.lib-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.lib-nav label {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+.lib-nav label:hover {
+    color: #284659;
+}
+input[type="radio"] {
+    display: none;
+}
+
+
+input[type="radio"]:checked + label {
+    color: #000;
+}
+
+input[type="radio"]:checked + label::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    margin-top: 5px;
+}
+
+
+#nord:checked ~ .images .nord-img,
+#EST:checked ~ .images .EST-img,
+#ouest:checked ~ .images .ouest-img,
+#sud:checked ~ .images .sud-img {
+    display: block;
+}
+

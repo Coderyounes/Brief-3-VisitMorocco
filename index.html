@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/indexstyle.css">
 </head>
+
 <body>
     <!-- hero_section-->
     <section>
@@ -13,27 +15,86 @@
         <div class="hero">
             <div class="hero__text">
                 <div class="hero_first_text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, esse? Aspernatur libero facere omnis quia, amet consequatur dolores? Commodi reprehenderit deserunt tempora vel? Natus cum vitae suscipit, possimus laboriosam hic?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, esse? Aspernatur libero facere
+                        omnis quia, amet consequatur dolores? Commodi reprehenderit deserunt tempora vel? Natus cum
+                        vitae suscipit, possimus laboriosam hic?</p>
                 </div>
                 <div class="hero__button">
                     <button>Discover</button>
                 </div>
-                    
-                
+
+
             </div>
-           
-        </div>   
+
+        </div>
     </section>
- 
+    <!-- history section-->
     <section>
-        <div class="history">
-            <div class="history_text">
-            <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
+        <div class="history_backround">
+            <div class="history_title"> 
+                HISTORY
             </div>
-            <div>
-                <img src="/Images/history.png" alt="">
+            <div class="history_content">
+                <div class="history_text">
+                    <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de
+                        distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem
+                        Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une
+                        distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français
+                        standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du
+                        Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers
+                        de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont
+                        apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter
+                        de petits clins d'oeil, voire des phrases embarassantes).</p>
+                </div>
+                    <img src="/images/marrakech.jpg" alt="merakch" class="history_img">
             </div>
         </div>
     </section>
+    <!--VIDEO LIBRARY-->
+    <section class="lib">
+        <h2>VIDEO LIBRARY</h2>
+        <input type="radio" id="nord" name="region" checked>
+        <input type="radio" id="EST" name="region">
+        <input type="radio" id="ouest" name="region">
+        <input type="radio" id="sud" name="region">
+        
+        <!-- Navigation Labels -->
+        <div class="lib-nav">
+            <label for="nord">NORD</label>
+            <label for="EST">EST</label>
+            <label for="ouest">OUEST</label>
+            <label for="sud">SUD</label>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="images">
+            <!-- plat Images -->
+            <img src="/images/chamal3.jpg" alt="morrocan cities" class="lib-img nord-img">
+            <img src="/images/chamal2.jpg" alt="morrocan cities" class="lib-img nord-img">
+            <img src="/images/chamal1.jpg" alt="morrocan cities" class="lib-img nord-img">
+            
+            <!-- boisson Images -->
+            <img src="/images/FES.jpg" alt="morrocan cities" class="lib-img EST-img">
+            <img src="/images/bab manssour.jpg" alt="morrocan cities" class="lib-img EST-img">
+            <img src="/images/Oujda.jpg" alt="morrocan cities" class="lib-img EST-img">
+
+
+            <!-- sweet Images -->
+            <img src="/images/Kénitra.jpg" alt="morrocan cities" class="lib-img ouest-img">
+            <img src="/images/El Jadida.jpg" alt="morrocan cities" class="lib-img ouest-img">
+            <img src="/images/marrakech.jpg" alt="morrocan cities" class="lib-img ouest-img">
+
+
+            <!-- autres Images -->
+            <img src="/images/desert2.jpg" alt="morrocan cities" class="lib-img sud-img">
+            <img src="/images/sidiifni.jpg" alt="morrocan cities" class="lib-img sud-img">
+            <img src="/images/deseer.jpg" alt="morrocan cities" class="lib-img sud-img">
+        </div>
+    </section>
+
+    <!-- video library section-->
+   
+
 </body>
+
 </html>
