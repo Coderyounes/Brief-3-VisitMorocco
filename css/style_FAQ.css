@@ -122,4 +122,31 @@ p {
   h2 {
   	font-size: 5vw;
   }
+  .second_section {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5vw;
+	align-items: center;
+
+}
+   .map {
+   	align-self: center;
+   	width: 80vw;
+   }
+
+   iframe {
+   	width: 80vw  ;
+   	height: 60vh;
+   }
+
+   .contact_us{
+
+    display: flex;
+    align-items: center;
+
+   }
+
+
 }
