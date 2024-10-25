@@ -361,8 +361,8 @@ input[type="radio"]:checked + label::after {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    width: 80%;
-    margin: 50px auto;
+    margin: 10px auto;
+    padding: 100px;
 }
 
 .text-container {
@@ -437,7 +437,8 @@ input[type="radio"]:checked + label::after {
         flex-direction: column; 
         align-items: center;
         text-align: center;
-        width: 100%; 
+        width: 100%;
+        padding: 0px;
     }
 
     .text-container {
@@ -471,6 +472,7 @@ input[type="radio"]:checked + label::after {
     .call_to_action{
         display: flex;
         flex-wrap: wrap;
+        padding: 30px;
     }
 }
 .call_to_action {
