@@ -95,6 +95,13 @@ textarea {
 
 }
 
+dt {
+	font-size: 1.17em;
+  margin-bottom: 0.33em;
+  font-weight: bold;
+  display: block;
+}
+
 
 .second_section {
 
