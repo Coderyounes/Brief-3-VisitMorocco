@@ -1,0 +1,113 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    background-color: #FCFAEE;
+}
+
+ .hero {
+        margin-top: 140px; 
+    }
+    
+    .hero ul {
+    
+        width: fit-content;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+        margin-bottom: 30px;
+        
+    }
+    
+    .hero ul li {
+        position: relative;
+        width: 69px;
+        text-align: center;
+        color: #5D5D5D;
+        cursor: pointer;
+        list-style: none;
+    }
+    .hero ul li.active,
+    .hero ul li:hover {
+        color: black;
+        
+    }
+    
+    .titre {
+        font-size: 3rem;
+        text-align: center;
+    }
+    @media(max-width: 412px){
+        .hero ul{
+            position: sticky;
+            top: 0; /* Sticks to the top of the viewport */
+            background-color: #FCFAEE;
+            z-index: 10;
+            padding-bottom: 5%;
+         }
+        .titre{
+            font-size: 2rem;
+        }
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .repas {
+        position: relative;
+        font-size: 17px;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+    }
+    .repas:hover div {
+        display: block;
+        animation: slide-down 0.5s forwards;
+    }
+    .repas div{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        background-color: rgb(139, 115, 115);
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        border-radius: 20px;
+    }
+    .repas p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+   
+      @keyframes slide-down {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
+    
+
+
+    
