@@ -116,29 +116,35 @@ button:hover {
     transform: scale(1.1);
 }
 .history_content{
-    padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 20px;
     line-height: 30px;
     flex-wrap: wrap;
+    font-family: Outfit;
 }
 .history_text{
     width: 600px;
     text-align: center;
+    font-weight: 900;
 }
 .history_title{
     display: flex;
     justify-content: center;
+    font-size: 32px;
 }
 .history_backround{
     background-color: #ECDFCC;
     border-radius: 60px;
     margin-bottom: 10px;
+    font-family: Outfit;
 
 }
 
+.hidden_element {
+    display: none;
+}
 
 @media only screen and (max-width: 950px) {
 
@@ -194,9 +200,10 @@ button:hover {
     }
     .history_img{
         width: 100%;
-        height: auto;
+        /*height: auto;*/
         
     }
+
     #img_call{
         width: 400px;
     }
@@ -230,11 +237,14 @@ button:hover {
 .lib {
     padding: 50px 0;
     text-align: center;
+    background-color: #DA8359;
+    border-radius: 30px;
 }
 
 .lib h2 {
     margin-bottom: 30px;
     color: #333;
+    font-family: Outfit;
 }
 
 
@@ -286,8 +296,9 @@ input[type="radio"]:checked + label::after {
 
 .lib-img {
     display: none;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -345,7 +356,6 @@ input[type="radio"]:checked + label::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     background-color: #7C5948;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -428,7 +438,6 @@ input[type="radio"]:checked + label::after {
         align-items: center;
         text-align: center;
         width: 100%; 
-        padding: 20px;
     }
 
     .text-container {
