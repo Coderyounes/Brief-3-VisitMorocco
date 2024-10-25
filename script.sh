@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="mohamed"
+branch="your-Branch-Name"
 
 git add .
 
